@@ -2,4 +2,6 @@
 var Faker = require('./lib');
 var faker = new Faker({ locales: require('./lib/locales') });
 module['exports'] = faker;
+console.log(faker.mobiles.price());
+console.log(faker.mobiles.color());
 console.log(faker.mobiles.name());
